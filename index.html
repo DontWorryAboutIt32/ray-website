@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="milestone" content="Portfolio">
+
+  <title>Raymond's Portfolio</title>
+  <!-- Bootstrap CSS link tag -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons link tag -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- devicon.dev Icons link tag -->
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Navbar code and customized links -->
+  <nav id="mainbar" class="navbar navbar-expand-md bg-body-tertiary fixed-top" data-bs-theme="dark">
+    <div class="container-fluid">
+      <!-- pc icon -->
+      <a class="navbar-brand" href="#hero-section"><i class="bi bi-pc-display"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#meet-me-section">Meet Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills-section">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#carousel-section">Pets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Scrollspy -->
+  <div data-bs-spy="scroll" data-bs-target="#mainbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+    class="scrollspy-example bg-body-tertiary rounded-2" tabindex="0">
+
+
+    <!-- Hero section -->
+    <section id="hero-section">
+      <div class="hero-img">
+        <div class="pfp text-center">
+          <img src="img/Scuffed-pfp.jpeg" class="img-fluid border border-5" alt="Raymond's face">
+          <h1>Raymond Tran</h1>
+          <h4 class="fst-italic">Chill, Relax, Code</h4>
+          <!-- Easter Egg -->
+          <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block">
+            <h4><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">and ..zzz... Sleep</a></h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet-me section -->
+    <section id="meet-me-section">
+      <h1 class="text-center p-3">Meet Me</h1>
+      <div class="container my-5">
+
+        <div class="row text-center g-4" id="meet-me-content">
+          <div class="col-12 col-md-6">
+            <img src="img/Meet_code.jpg" class="img-fluid" alt="computer w/ coding program on a desk w/ cozy vibes">
+          </div>
+          <div class="col-12 col-md-6" id="meet-me-text">
+            <p class="fs-5">Hey all, welcome to my portfolio website. I've made this by incorperating concepts and
+              skills using html,
+              css, and bootstrap I've gained from "Coding for Web". I've been interested in computers and software
+              development since I was 13 and dreamed to work as a software engineer.
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills-section">
+      <div class="container py-3">
+
+        <h1 class="text-center my-4">Skills</h1>
+
+        <div class="row text-center g-4 skills">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <!-- HTML -->
+            <i class="devicon-html5-plain-wordmark"></i>
+            <p>Structuring Content</p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <!-- CSS -->
+            <i class="devicon-css3-plain-wordmark"></i>
+            <p>Looking Good</p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <!-- BootStrap -->
+            <i class="devicon-bootstrap-plain-wordmark"></i>
+            <p>Easy Shortcut</p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <!-- Java -->
+            <i class="devicon-java-plain-wordmark"></i>
+            <p>Object-oriented</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section id="carousel-section">
+      <h1 class="text-center p-3">My Pets</h1>
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/carousel/Timmy.jpg" class="d-block w-100" alt="Timmy the tortoise">
+            <div class="carousel-caption">
+              <h5>Timmy</h5>
+              <p>He loves iceberg lettuce</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/carousel/Orange.jpg" class="d-block w-100" alt="Orange the shrimp">
+            <div class="carousel-caption">
+              <h5>Orange</h5>
+              <p>r/ShrimpTank</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/carousel/Jack.jpg" class="d-block w-100" alt="Jack the fish">
+            <div class="carousel-caption">
+              <h5>Jack</h5>
+              <p>He's a little shy</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section">
+      <div class="container py-3">
+
+        <h1 class="text-center my-4">Contact</h1>
+
+        <div class="row text-center g-4 contact">
+          <div class="col-12 col-md-4">
+            <!-- linkedin -->
+            <a href="https://www.linkedin.com/in/ray-t-bit/"><i class="devicon-linkedin-plain"></i></a>
+          </div>
+          <div class="col-12 col-md-4">
+            <!-- github -->
+            <a href="https://github.com/DontWorryAboutIt32"><i class="devicon-github-original"></i></a>
+          </div>
+          <div class="col-12 col-md-4">
+            <!-- email -->
+            <a href="mailto: raytran2004v2@gmail.com">
+              <i class="devicon-google-plain"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Scrollspy -->
+  </div>
+  <!-- Footer section -->
+  <section id="footer-section">
+    <p class="text-center"><i class="bi bi-c-circle"></i> Raymond Tran 2024</p>
+  </section>
+
+  <!-- Bootstrap JavaScript script tag -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
